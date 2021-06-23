@@ -1,3 +1,132 @@
+# Rebuild of the fullstack-auth
+* in the terminal, once inside the directory, type the following; 
+```
+npx create-react-app auth-frontend
+```
+same as-
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+then for the backend;
+```
+express auth-backend --view=ejs
+```
+* npm run start in front end
+* delete svg, webVitals, setupTests, App.test.js, in index.js delete webVitals stuff at bottom and top, simplify app.js to bare-bones leaving css import, in app.css-delete all , 
+* reset css
+```
+https://meyerweb.com/eric/tools/css/reset/
+
+```
+```
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+```
+this reset may be better?
+```
+https://stackoverflow.com/questions/11578819/css-reset-what-exactly-does-it-do
+```
+
+* add _base.css file in src folder, import _base.css to the index.js file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
