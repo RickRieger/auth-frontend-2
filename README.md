@@ -70,13 +70,21 @@ table {
 	border-spacing: 0;
 }
 ```
-this reset may be better?
+* this reset may be better?
 ```
 https://stackoverflow.com/questions/11578819/css-reset-what-exactly-does-it-do
 ```
 
-* add _base.css file in src folder, import _base.css to the index.js file.
+* add _base.css file in src folder, import _base.css in the index.js file.
+* created a components folder, inside a Signup folder with Signup.js and Signup.css.  Started code provided.
+```
+npm i validator
+```
+* Bring in methods/functions from validator in the Signup.js file.
+```
+import { isAlpha, isEmail, isAlphanumeric, isStrongPassword } from "validator";
 
+```
 
 
 
