@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { isAlpha, isEmail, isAlphanumeric, isStrongPassword } from 'validator';
+import { toast } from 'react-toastify';
 import Axios from '../Utils/Axios';
 import './Signup.css';
 //Standard react component using class
@@ -204,6 +205,7 @@ export class Signup extends Component {
     }
   };
 
+  //Brought the toast below to show error and success messages when logging in(will email client in future lesson) The default settings to toast are commented out since they are not needed.
   handleOnSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -214,10 +216,28 @@ export class Signup extends Component {
         username: this.state.username,
         password: this.state.password,
       };
-      let success = await Axios.post('/api/user/sign-up', userInputObj);
+      let success = await Axios.post("/api/user/sign-up", userInputObj);
       console.log(success);
+      toast.success(`User created - Please login`, {
+        // position: "top-center",
+        // autoClose: 5000,
+        // hideProgressBar: false,
+        // closeOnClick: true,
+        // pauseOnHover: true,
+        // draggable: true,
+        // progress: undefined,
+      });
     } catch (e) {
-      console.log(e);
+      //e.response.data.message is an axios thing
+      toast.error(`${e.response.data.message}`, {
+        // position: "top-center",
+        // autoClose: 5000,
+        // hideProgressBar: false,
+        // closeOnClick: true,
+        // pauseOnHover: true,
+        // draggable: true,
+        // progress: undefined,
+      });
     }
   };
 

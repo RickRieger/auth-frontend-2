@@ -1,3 +1,7 @@
+//This how axios creates an instance.  If in development mode, 
+//use the specified address, otherwise, use deployed address.  
+//The time out is set to 5 sec, think of it as a phone hanging
+// up if no answer.
 import axios from "axios";
 const Axios = axios.create({
   baseURL:

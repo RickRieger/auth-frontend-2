@@ -370,11 +370,27 @@ app.use(errorController);
 
 ```
 * In video lesson "L- Auth-backend-development/production, Error Handling, React Toastify " @ 2:13, Pak walks thru logic of message handling in the backend.  It all starts in userController with async function "signup" with a duplicate email.  
-* 
-L- Auth-backend-development/production, Error Handling, React Toastify
-afternoon class.
+* Added code to the errorController, ErrorMethodClass files showing how to parse the error object.  
+* In the Front End, install toastify.
+
+```
+npm install --save react-toastify
+
+```
+* grab these other lines of code and add to app.js;
+
+```
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+```
+
+* google "axios error handling"
+ 
+ * make sure the success message in the back end does not return the user info (no payload).
 
 
+
+  L- Auth-Login, JWT ---last video.
 
 
 
