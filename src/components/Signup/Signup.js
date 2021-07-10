@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+
 import { isAlpha, isEmail, isAlphanumeric, isStrongPassword } from 'validator';
 import { toast } from 'react-toastify';
 import Axios from '../Utils/Axios';
 import './Signup.css';
+
 //Standard react component using class
 export class Signup extends Component {
   state = {

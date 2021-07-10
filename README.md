@@ -386,11 +386,13 @@ import 'react-toastify/dist/ReactToastify.css';
 
 * google "axios error handling"
  
- * make sure the success message in the back end does not return the user info (no payload).
+* make sure the success message in the back end does not return the user info (no payload).
+
+* Work on "log in" re-use the sign-up css.
 
 
 
-  L- Auth-Login, JWT ---last video.
+
 
 
 
